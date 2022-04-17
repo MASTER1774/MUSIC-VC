@@ -25,11 +25,11 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("API_ID", None) or "7055975"
-        self.API_HASH: str = os.environ.get("API_HASH", None) or "b5a46009c73889abf90fdcff928e4532"
-        self.SESSION: str = os.environ.get("PYROGRAM_SESSION", None) or "BQB2Imr63SjPpo4o1B1DravxYUQk6bnLhu0aCfUmUwKfd-A5AfCZ4lBXcfPfo5PltmKp9JyiKjuhwhuuEKqdIcGGxtCcdk6wRChAD1PeSaCS8I6PPrFoZRmSqLS2sL6L_Lm6EXbyNLGdXbAYNiyUTPYijtLY6JsGFEXCgPLG4PbVI87whqg1W8KLHwvDl45W5qtBosfAzR4T5TKjUStFTUppL4Tg58L6j1G5bnmfxDSrwLdZXTxVWksZJySGSfubW0bo3eHzGMEMhRHlR4x5gIuurLzyZVxVx2fAIRmFI-Wc9qxZtQ_kFEFRbLUrzOHtLem4zCVSoBe4KfdPT0UtiM2jfCT8RgA"
+        self.API_ID: str = os.environ.get("API_ID", None) or "19217751"
+        self.API_HASH: str = os.environ.get("API_HASH", None) or "65031483c1e0a9d18b1f3f54bb4114d8"
+        self.SESSION: str = os.environ.get("PYROGRAM_SESSION", None) or "1BVtsOIkBu2_VbuixqHTgpAXL3qyCD_MubrklHaLAcn1wpGD0F4bdRHj6n7ZakC5ri5bWeUZLvYE1P-xmvNTOYUoOyM8LFgKeLYJ5fqOfbcTsW1esS_rv_Yh3hTLBUOkozsFbLS3Z0MJgxZuCs72tzJcAUUNnGU50jw7hUSgVMRa9Nfkcpgq-3yxBEOp2D9wvoEgl7lu3hRkev_aHm5fgeV4WZxOPGCAdPFLHxXw8_jmfG8CwRXKdr72RV_o5EXFVnqoKhMaUHZOK5fYQgxqGzudxFcJyOnfC5aVmEIwoX8CTXqDDnYzsyKxp8yYHYEL4ZXo0BSxZZkDYhyE3SU9oGik0qQ1fCd0="
         self.SUDOERS: list = [
-            int(id) for id in os.environ.get("SUDOERS", "2082798662").split() if id.isnumeric()
+            int(id) for id in os.environ.get("SUDOERS", "5238676811").split() if id.isnumeric()
         ]
         if not self.SESSION or not self.API_ID or not self.API_HASH:
             print("Error: SESSION, API_ID and API_HASH is required!")
